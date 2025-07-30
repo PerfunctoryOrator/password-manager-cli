@@ -71,9 +71,9 @@ def getDateTime():
         yearIST += 1
 
     if hourIST > 12:
-        time = f"{str(hourIST - 12)}:{str(minuteIST)}:{nowGMT.strftime('%S')} PM"
+        time = f"{str(hourIST - 12)}:{str(minuteIST)}:{nowGMT.strftime('%S')} PM"
     else:
-        time = f"{str(hourIST)}:{str(minuteIST)}:{nowGMT.strftime('%S')} AM"
+        time = f"{str(hourIST)}:{str(minuteIST)}:{nowGMT.strftime('%S')} AM"
 
     return(f"on {dayIST} {monthNames[monthIST]} {yearIST} at {time}")
 
